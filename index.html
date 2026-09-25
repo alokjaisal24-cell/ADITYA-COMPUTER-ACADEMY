@@ -1,0 +1,740 @@
+```html
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aditya Computer Academy</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="logo-area">
+        <div class="logo">ACA</div>
+
+        <div>
+            <h2>Aditya Computer Academy</h2>
+            <span>Learn • Grow • Succeed</span>
+        </div>
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#admin" class="admin-btn">Admin Login</a>
+    </nav>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+</header>
+
+
+<!-- ================= MOBILE MENU ================= -->
+
+<div id="mobileMenu" class="mobile-menu">
+
+    <a href="#home">Home</a>
+    <a href="#courses">Courses</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#admin">Admin Login</a>
+
+</div>
+
+
+<!-- ================= HERO ================= -->
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <span class="badge">PROFESSIONAL COMPUTER EDUCATION</span>
+
+        <h1>
+            Computer सीखें,<br>
+            <span>Career बढ़ाएँ</span>
+        </h1>
+
+        <p>
+            ADCA, DCA, CCC, Tally + GST, MS Office,
+            Typing, AI और Web Designing की practical education.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#courses" class="btn primary">
+                📚 Courses देखें
+            </a>
+
+            <a href="#admission" class="btn secondary">
+                📝 Apply Now
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-card">
+
+        <div class="computer-icon">
+            💻
+        </div>
+
+        <h2>Smart Computer Learning</h2>
+
+        <p>
+            Practical Classes • Notes • Tests • Results
+            • Certificates
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= THOUGHT SLIDER ================= -->
+
+<section class="thought-section">
+
+    <div id="thoughtText">
+        “आज की सीख, कल की सफलता बनती है।”
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="section">
+
+    <div class="section-title">
+
+        <span>ABOUT ACADEMY</span>
+
+        <h2>Aditya Computer Academy</h2>
+
+        <p>
+            विद्यार्थियों को computer education और digital skills
+            प्रदान करने के लिए एक modern learning platform.
+        </p>
+
+    </div>
+
+
+    <div class="about-grid">
+
+        <div class="about-card">
+            🎓
+            <h3>Practical Learning</h3>
+            <p>Hands-on computer training.</p>
+        </div>
+
+        <div class="about-card">
+            📚
+            <h3>Study Material</h3>
+            <p>Notes और learning material.</p>
+        </div>
+
+        <div class="about-card">
+            🏆
+            <h3>Certificate</h3>
+            <p>Course completion certificate.</p>
+        </div>
+
+        <div class="about-card">
+            📊
+            <h3>Online Results</h3>
+            <p>Result online check करें.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= COURSES ================= -->
+
+<section id="courses" class="section courses-section">
+
+    <div class="section-title">
+
+        <span>OUR COURSES</span>
+
+        <h2>Popular Computer Courses</h2>
+
+        <p>
+            किसी भी course पर View Details दबाकर पूरा syllabus देखें।
+        </p>
+
+    </div>
+
+
+    <div class="course-grid">
+
+
+        <!-- ADCA -->
+
+        <div class="course-card">
+
+            <div class="course-icon">💻</div>
+
+            <h3>ADCA</h3>
+
+            <p>
+                Advanced Diploma in Computer Applications
+            </p>
+
+            <div class="course-info">
+                ⏱ Duration: 12 Months
+            </div>
+
+            <button
+                class="course-btn"
+                onclick="openCourse('adca')">
+
+                View Details →
+
+            </button>
+
+        </div>
+
+
+        <!-- DCA -->
+
+        <div class="course-card">
+
+            <div class="course-icon">🖥️</div>
+
+            <h3>DCA</h3>
+
+            <p>
+                Diploma in Computer Applications
+            </p>
+
+            <div class="course-info">
+                ⏱ Duration: 6 Months
+            </div>
+
+            <button
+                class="course-btn"
+                onclick="openCourse('dca')">
+
+                View Details →
+
+            </button>
+
+        </div>
+
+
+        <!-- CCC -->
+
+        <div class="course-card">
+
+            <div class="course-icon">📘</div>
+
+            <h3>CCC</h3>
+
+            <p>
+                Course on Computer Concepts
+            </p>
+
+            <div class="course-info">
+                ⏱ Duration: 3 Months
+            </div>
+
+            <button
+                class="course-btn"
+                onclick="openCourse('ccc')">
+
+                View Details →
+
+            </button>
+
+        </div>
+
+
+        <!-- TALLY -->
+
+        <div class="course-card">
+
+            <div class="course-icon">🧾</div>
+
+            <h3>Tally Prime + GST</h3>
+
+            <p>
+                Accounting और GST practical course
+            </p>
+
+            <div class="course-info">
+                ⏱ Duration: 4 Months
+            </div>
+
+            <button
+                class="course-btn"
+                onclick="openCourse('tally')">
+
+                View Details →
+
+            </button>
+
+        </div>
+
+
+        <!-- MS OFFICE -->
+
+        <div class="course-card">
+
+            <div class="course-icon">📊</div>
+
+            <h3>MS Office</h3>
+
+            <p>
+                Word, Excel और PowerPoint
+            </p>
+
+            <div class="course-info">
+                ⏱ Duration: 3 Months
+            </div>
+
+            <button
+                class="course-btn"
+                onclick="openCourse('office')">
+
+                View Details →
+
+            </button>
+
+        </div>
+
+
+        <!-- TYPING -->
+
+        <div class="course-card">
+
+            <div class="course-icon">⌨️</div>
+
+            <h3>Typing</h3>
+
+            <p>
+                Hindi & English Typing
+            </p>
+
+            <div class="course-info">
+                ⏱ Duration: 3 Months
+            </div>
+
+            <button
+                class="course-btn"
+                onclick="openCourse('typing')">
+
+                View Details →
+
+            </button>
+
+        </div>
+
+
+        <!-- AI -->
+
+        <div class="course-card">
+
+            <div class="course-icon">🤖</div>
+
+            <h3>AI + Web Designing</h3>
+
+            <p>
+                HTML, CSS, JavaScript और AI Tools
+            </p>
+
+            <div class="course-info">
+                ⏱ Duration: 6 Months
+            </div>
+
+            <button
+                class="course-btn"
+                onclick="openCourse('ai')">
+
+                View Details →
+
+            </button>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- ================= COURSE MODAL ================= -->
+
+<div id="courseModal" class="modal">
+
+    <div class="modal-content">
+
+        <button class="close" onclick="closeCourse()">×</button>
+
+        <span class="badge">COURSE DETAILS</span>
+
+        <h1 id="courseTitle"></h1>
+
+        <p id="courseOverview"></p>
+
+
+        <div class="course-detail-info">
+
+            <div>
+                <b>Duration</b>
+                <span id="courseDuration"></span>
+            </div>
+
+            <div>
+                <b>Eligibility</b>
+                <span id="courseEligibility"></span>
+            </div>
+
+        </div>
+
+
+        <h2>📚 Complete Syllabus</h2>
+
+        <div id="syllabus"></div>
+
+
+        <a href="#admission"
+           onclick="closeCourse()"
+           class="btn primary apply-btn">
+
+            📝 Apply Now
+
+        </a>
+
+    </div>
+
+</div>
+
+
+<!-- ================= REVIEWS ================= -->
+
+<section id="reviews" class="section reviews-section">
+
+    <div class="section-title">
+
+        <span>STUDENT REVIEWS</span>
+
+        <h2>Students Say</h2>
+
+        <p>
+            हमारे students का experience.
+        </p>
+
+    </div>
+
+
+    <div class="review-container">
+
+        <button onclick="previousReview()"
+                class="slider-btn">
+
+            ‹
+
+        </button>
+
+
+        <div id="reviewBox" class="review-box">
+
+        </div>
+
+
+        <button onclick="nextReview()"
+                class="slider-btn">
+
+            ›
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ADMISSION ================= -->
+
+<section id="admission" class="section admission-section">
+
+    <div class="section-title">
+
+        <span>ONLINE ADMISSION</span>
+
+        <h2>Admission Form</h2>
+
+    </div>
+
+
+    <form class="admission-form"
+          onsubmit="submitAdmission(event)">
+
+        <div class="form-row">
+
+            <div>
+                <label>Student Name</label>
+
+                <input
+                    type="text"
+                    id="studentName"
+                    placeholder="Enter your name"
+                    required>
+
+            </div>
+
+
+            <div>
+
+                <label>Mobile Number</label>
+
+                <input
+                    type="tel"
+                    placeholder="Enter mobile number"
+                    required>
+
+            </div>
+
+        </div>
+
+
+        <div class="form-row">
+
+            <div>
+
+                <label>Email</label>
+
+                <input
+                    type="email"
+                    placeholder="Enter email">
+
+            </div>
+
+
+            <div>
+
+                <label>Select Course</label>
+
+                <select required>
+
+                    <option value="">
+                        Select Course
+                    </option>
+
+                    <option>ADCA</option>
+                    <option>DCA</option>
+                    <option>CCC</option>
+                    <option>Tally Prime + GST</option>
+                    <option>MS Office</option>
+                    <option>Typing</option>
+                    <option>AI + Web Designing</option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <label>Address</label>
+
+        <textarea
+            placeholder="Enter your address">
+        </textarea>
+
+
+        <button class="btn primary">
+
+            Submit Admission
+
+        </button>
+
+    </form>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section class="section services">
+
+    <div class="section-title">
+
+        <span>STUDENT SERVICES</span>
+
+        <h2>Online Services</h2>
+
+    </div>
+
+
+    <div class="service-grid">
+
+
+        <div class="service-card">
+
+            <div>📊</div>
+
+            <h3>Check Result</h3>
+
+            <p>
+                Roll number से result देखें।
+            </p>
+
+            <button onclick="showMessage('Result Search')">
+                Open
+            </button>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div>🏆</div>
+
+            <h3>Certificate Verification</h3>
+
+            <p>
+                Certificate number से verify करें।
+            </p>
+
+            <button onclick="showMessage('Certificate Verification')">
+                Verify
+            </button>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div>🎓</div>
+
+            <h3>Student Login</h3>
+
+            <p>
+                Student portal login।
+            </p>
+
+            <button onclick="showMessage('Student Login')">
+                Login
+            </button>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div>📚</div>
+
+            <h3>Notes & PDFs</h3>
+
+            <p>
+                Study material download करें।
+            </p>
+
+            <button onclick="showMessage('Notes Section')">
+                Open
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="contact-section">
+
+    <div class="container">
+
+        <h2>Aditya Computer Academy</h2>
+
+        <p>
+            📍 Your Address, Varanasi, Uttar Pradesh
+        </p>
+
+        <p>
+            📞 +91 XXXXX XXXXX
+        </p>
+
+        <p>
+            📧 your@email.com
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <div>
+
+            <h3>Aditya Computer Academy</h3>
+
+            <p>
+                Learn • Grow • Succeed
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h4>Quick Links</h4>
+
+            <a href="#home">Home</a>
+            <a href="#courses">Courses</a>
+            <a href="#admission">Admission</a>
+
+        </div>
+
+
+        <div>
+
+            <h4>Student Services</h4>
+
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 Aditya Computer Academy.
+        All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
+```
